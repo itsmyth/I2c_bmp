@@ -51,7 +51,7 @@ void loop() {
   float pressure = bmp.readPressure() / 100.0F;
   
   // Calculate approximate altitude based on standard barometric pressure (1013.25 hPa)
-  float altitude = bmp.readAltitude(1013.25);
+  float altitude = bmp.readAltitude(1024.0);
 
   // Print results to Serial Monitor
   Serial.print(F("Temperature: "));
